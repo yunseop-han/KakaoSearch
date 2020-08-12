@@ -1,0 +1,693 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0701EEA224E0EFB7008A938E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0701EEA124E0EFB7008A938E /* AppDelegate.swift */; };
+		0701EEA424E0EFB7008A938E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0701EEA324E0EFB7008A938E /* SceneDelegate.swift */; };
+		0701EEA924E0EFB7008A938E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0701EEA724E0EFB7008A938E /* Main.storyboard */; };
+		0701EEAB24E0EFB8008A938E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0701EEAA24E0EFB8008A938E /* Assets.xcassets */; };
+		0701EEAE24E0EFB8008A938E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0701EEAC24E0EFB8008A938E /* LaunchScreen.storyboard */; };
+		0701EEB924E0EFB8008A938E /* KakaoSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0701EEB824E0EFB8008A938E /* KakaoSearchTests.swift */; };
+		0701EEC424E0EFB8008A938E /* KakaoSearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0701EEC324E0EFB8008A938E /* KakaoSearchUITests.swift */; };
+		0701EED524E0F975008A938E /* DocumentListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0701EED424E0F975008A938E /* DocumentListViewController.swift */; };
+		0701EED824E0FA1D008A938E /* Responses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0701EED724E0FA1D008A938E /* Responses.swift */; };
+		0701EEDA24E10020008A938E /* DocumentListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0701EED924E10020008A938E /* DocumentListViewModel.swift */; };
+		0701EEDC24E10039008A938E /* SearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0701EEDB24E10039008A938E /* SearchService.swift */; };
+		0701EEDE24E13F61008A938E /* DocumentDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0701EEDD24E13F61008A938E /* DocumentDetailViewController.swift */; };
+		0701EEE224E14FAD008A938E /* DocumentDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0701EEE124E14FAD008A938E /* DocumentDetailViewModel.swift */; };
+		072B53F624E2923B00F85970 /* DocumentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072B53F524E2923B00F85970 /* DocumentCell.swift */; };
+		072B53F824E292C900F85970 /* DocumentCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072B53F724E292C900F85970 /* DocumentCellViewModel.swift */; };
+		072B53FA24E2930E00F85970 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072B53F924E2930E00F85970 /* Utilities.swift */; };
+		0762C6D824E4428C00291B8E /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0762C6D724E4428C00291B8E /* APIKey.swift */; };
+		07927E9724E41F6C000365AE /* RecentSearchTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07927E9624E41F6C000365AE /* RecentSearchTableController.swift */; };
+		07927E9924E42733000365AE /* RecentSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07927E9824E42733000365AE /* RecentSearchViewModel.swift */; };
+		07A4AEDF24E1D3930012BEB9 /* DocumentStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A4AEDE24E1D3930012BEB9 /* DocumentStorage.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0701EEB524E0EFB8008A938E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0701EE9624E0EFB7008A938E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0701EE9D24E0EFB7008A938E;
+			remoteInfo = KakaoSearch;
+		};
+		0701EEC024E0EFB8008A938E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0701EE9624E0EFB7008A938E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0701EE9D24E0EFB7008A938E;
+			remoteInfo = KakaoSearch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0701EE9E24E0EFB7008A938E /* KakaoSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KakaoSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0701EEA124E0EFB7008A938E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0701EEA324E0EFB7008A938E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0701EEA824E0EFB7008A938E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0701EEAA24E0EFB8008A938E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0701EEAD24E0EFB8008A938E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0701EEAF24E0EFB8008A938E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0701EEB424E0EFB8008A938E /* KakaoSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KakaoSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0701EEB824E0EFB8008A938E /* KakaoSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoSearchTests.swift; sourceTree = "<group>"; };
+		0701EEBA24E0EFB8008A938E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0701EEBF24E0EFB8008A938E /* KakaoSearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KakaoSearchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0701EEC324E0EFB8008A938E /* KakaoSearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoSearchUITests.swift; sourceTree = "<group>"; };
+		0701EEC524E0EFB8008A938E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0701EED424E0F975008A938E /* DocumentListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentListViewController.swift; sourceTree = "<group>"; };
+		0701EED724E0FA1D008A938E /* Responses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Responses.swift; sourceTree = "<group>"; };
+		0701EED924E10020008A938E /* DocumentListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentListViewModel.swift; sourceTree = "<group>"; };
+		0701EEDB24E10039008A938E /* SearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchService.swift; sourceTree = "<group>"; };
+		0701EEDD24E13F61008A938E /* DocumentDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentDetailViewController.swift; sourceTree = "<group>"; };
+		0701EEE124E14FAD008A938E /* DocumentDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentDetailViewModel.swift; sourceTree = "<group>"; };
+		072B53F524E2923B00F85970 /* DocumentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentCell.swift; sourceTree = "<group>"; };
+		072B53F724E292C900F85970 /* DocumentCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentCellViewModel.swift; sourceTree = "<group>"; };
+		072B53F924E2930E00F85970 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		0762C6D724E4428C00291B8E /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
+		07927E9624E41F6C000365AE /* RecentSearchTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentSearchTableController.swift; sourceTree = "<group>"; };
+		07927E9824E42733000365AE /* RecentSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentSearchViewModel.swift; sourceTree = "<group>"; };
+		07A4AEDE24E1D3930012BEB9 /* DocumentStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentStorage.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0701EE9B24E0EFB7008A938E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0701EEB124E0EFB8008A938E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0701EEBC24E0EFB8008A938E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0701EE9524E0EFB7008A938E = {
+			isa = PBXGroup;
+			children = (
+				0701EEA024E0EFB7008A938E /* KakaoSearch */,
+				0701EEB724E0EFB8008A938E /* KakaoSearchTests */,
+				0701EEC224E0EFB8008A938E /* KakaoSearchUITests */,
+				0701EE9F24E0EFB7008A938E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0701EE9F24E0EFB7008A938E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0701EE9E24E0EFB7008A938E /* KakaoSearch.app */,
+				0701EEB424E0EFB8008A938E /* KakaoSearchTests.xctest */,
+				0701EEBF24E0EFB8008A938E /* KakaoSearchUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0701EEA024E0EFB7008A938E /* KakaoSearch */ = {
+			isa = PBXGroup;
+			children = (
+				07927E9B24E427D9000365AE /* View */,
+				072B53FE24E3141700F85970 /* Helper */,
+				0701EED224E0F057008A938E /* Storyboard */,
+				0701EED324E0F071008A938E /* Resources */,
+				0701EED624E0F97C008A938E /* ViewModel */,
+				072B53FD24E30DE400F85970 /* Services */,
+				0701EEA124E0EFB7008A938E /* AppDelegate.swift */,
+				0701EEA324E0EFB7008A938E /* SceneDelegate.swift */,
+			);
+			path = KakaoSearch;
+			sourceTree = "<group>";
+		};
+		0701EEB724E0EFB8008A938E /* KakaoSearchTests */ = {
+			isa = PBXGroup;
+			children = (
+				0701EEB824E0EFB8008A938E /* KakaoSearchTests.swift */,
+				0701EEBA24E0EFB8008A938E /* Info.plist */,
+			);
+			path = KakaoSearchTests;
+			sourceTree = "<group>";
+		};
+		0701EEC224E0EFB8008A938E /* KakaoSearchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0701EEC324E0EFB8008A938E /* KakaoSearchUITests.swift */,
+				0701EEC524E0EFB8008A938E /* Info.plist */,
+			);
+			path = KakaoSearchUITests;
+			sourceTree = "<group>";
+		};
+		0701EED224E0F057008A938E /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				0701EEA724E0EFB7008A938E /* Main.storyboard */,
+				0701EEAC24E0EFB8008A938E /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		0701EED324E0F071008A938E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0701EEAA24E0EFB8008A938E /* Assets.xcassets */,
+				0701EEAF24E0EFB8008A938E /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0701EED624E0F97C008A938E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				072B53F724E292C900F85970 /* DocumentCellViewModel.swift */,
+				0701EED924E10020008A938E /* DocumentListViewModel.swift */,
+				0701EEE124E14FAD008A938E /* DocumentDetailViewModel.swift */,
+				07927E9824E42733000365AE /* RecentSearchViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		072B53FD24E30DE400F85970 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				07A4AEDE24E1D3930012BEB9 /* DocumentStorage.swift */,
+				0701EED724E0FA1D008A938E /* Responses.swift */,
+				0701EEDB24E10039008A938E /* SearchService.swift */,
+				0762C6D724E4428C00291B8E /* APIKey.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		072B53FE24E3141700F85970 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				072B53F924E2930E00F85970 /* Utilities.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		07927E9B24E427D9000365AE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				072B53F524E2923B00F85970 /* DocumentCell.swift */,
+				0701EED424E0F975008A938E /* DocumentListViewController.swift */,
+				0701EEDD24E13F61008A938E /* DocumentDetailViewController.swift */,
+				07927E9624E41F6C000365AE /* RecentSearchTableController.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0701EE9D24E0EFB7008A938E /* KakaoSearch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0701EEC824E0EFB8008A938E /* Build configuration list for PBXNativeTarget "KakaoSearch" */;
+			buildPhases = (
+				0701EE9A24E0EFB7008A938E /* Sources */,
+				0701EE9B24E0EFB7008A938E /* Frameworks */,
+				0701EE9C24E0EFB7008A938E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KakaoSearch;
+			productName = KakaoSearch;
+			productReference = 0701EE9E24E0EFB7008A938E /* KakaoSearch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0701EEB324E0EFB8008A938E /* KakaoSearchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0701EECB24E0EFB8008A938E /* Build configuration list for PBXNativeTarget "KakaoSearchTests" */;
+			buildPhases = (
+				0701EEB024E0EFB8008A938E /* Sources */,
+				0701EEB124E0EFB8008A938E /* Frameworks */,
+				0701EEB224E0EFB8008A938E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0701EEB624E0EFB8008A938E /* PBXTargetDependency */,
+			);
+			name = KakaoSearchTests;
+			productName = KakaoSearchTests;
+			productReference = 0701EEB424E0EFB8008A938E /* KakaoSearchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0701EEBE24E0EFB8008A938E /* KakaoSearchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0701EECE24E0EFB8008A938E /* Build configuration list for PBXNativeTarget "KakaoSearchUITests" */;
+			buildPhases = (
+				0701EEBB24E0EFB8008A938E /* Sources */,
+				0701EEBC24E0EFB8008A938E /* Frameworks */,
+				0701EEBD24E0EFB8008A938E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0701EEC124E0EFB8008A938E /* PBXTargetDependency */,
+			);
+			name = KakaoSearchUITests;
+			productName = KakaoSearchUITests;
+			productReference = 0701EEBF24E0EFB8008A938E /* KakaoSearchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0701EE9624E0EFB7008A938E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = yunseop;
+				TargetAttributes = {
+					0701EE9D24E0EFB7008A938E = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					0701EEB324E0EFB8008A938E = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 0701EE9D24E0EFB7008A938E;
+					};
+					0701EEBE24E0EFB8008A938E = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 0701EE9D24E0EFB7008A938E;
+					};
+				};
+			};
+			buildConfigurationList = 0701EE9924E0EFB7008A938E /* Build configuration list for PBXProject "KakaoSearch" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0701EE9524E0EFB7008A938E;
+			productRefGroup = 0701EE9F24E0EFB7008A938E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0701EE9D24E0EFB7008A938E /* KakaoSearch */,
+				0701EEB324E0EFB8008A938E /* KakaoSearchTests */,
+				0701EEBE24E0EFB8008A938E /* KakaoSearchUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0701EE9C24E0EFB7008A938E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0701EEAE24E0EFB8008A938E /* LaunchScreen.storyboard in Resources */,
+				0701EEAB24E0EFB8008A938E /* Assets.xcassets in Resources */,
+				0701EEA924E0EFB7008A938E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0701EEB224E0EFB8008A938E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0701EEBD24E0EFB8008A938E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0701EE9A24E0EFB7008A938E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07A4AEDF24E1D3930012BEB9 /* DocumentStorage.swift in Sources */,
+				07927E9924E42733000365AE /* RecentSearchViewModel.swift in Sources */,
+				0701EED524E0F975008A938E /* DocumentListViewController.swift in Sources */,
+				0701EEDA24E10020008A938E /* DocumentListViewModel.swift in Sources */,
+				0762C6D824E4428C00291B8E /* APIKey.swift in Sources */,
+				0701EEA224E0EFB7008A938E /* AppDelegate.swift in Sources */,
+				0701EEDC24E10039008A938E /* SearchService.swift in Sources */,
+				0701EEA424E0EFB7008A938E /* SceneDelegate.swift in Sources */,
+				072B53FA24E2930E00F85970 /* Utilities.swift in Sources */,
+				07927E9724E41F6C000365AE /* RecentSearchTableController.swift in Sources */,
+				072B53F624E2923B00F85970 /* DocumentCell.swift in Sources */,
+				0701EED824E0FA1D008A938E /* Responses.swift in Sources */,
+				0701EEE224E14FAD008A938E /* DocumentDetailViewModel.swift in Sources */,
+				0701EEDE24E13F61008A938E /* DocumentDetailViewController.swift in Sources */,
+				072B53F824E292C900F85970 /* DocumentCellViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0701EEB024E0EFB8008A938E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0701EEB924E0EFB8008A938E /* KakaoSearchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0701EEBB24E0EFB8008A938E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0701EEC424E0EFB8008A938E /* KakaoSearchUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0701EEB624E0EFB8008A938E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0701EE9D24E0EFB7008A938E /* KakaoSearch */;
+			targetProxy = 0701EEB524E0EFB8008A938E /* PBXContainerItemProxy */;
+		};
+		0701EEC124E0EFB8008A938E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0701EE9D24E0EFB7008A938E /* KakaoSearch */;
+			targetProxy = 0701EEC024E0EFB8008A938E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0701EEA724E0EFB7008A938E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0701EEA824E0EFB7008A938E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0701EEAC24E0EFB8008A938E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0701EEAD24E0EFB8008A938E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0701EEC624E0EFB8008A938E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0701EEC724E0EFB8008A938E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0701EEC924E0EFB8008A938E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C2JG56G9EQ;
+				INFOPLIST_FILE = KakaoSearch/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yunseop.KakaoSearch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0701EECA24E0EFB8008A938E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C2JG56G9EQ;
+				INFOPLIST_FILE = KakaoSearch/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yunseop.KakaoSearch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0701EECC24E0EFB8008A938E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C2JG56G9EQ;
+				INFOPLIST_FILE = KakaoSearchTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yunseop.KakaoSearchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KakaoSearch.app/KakaoSearch";
+			};
+			name = Debug;
+		};
+		0701EECD24E0EFB8008A938E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C2JG56G9EQ;
+				INFOPLIST_FILE = KakaoSearchTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yunseop.KakaoSearchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KakaoSearch.app/KakaoSearch";
+			};
+			name = Release;
+		};
+		0701EECF24E0EFB8008A938E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C2JG56G9EQ;
+				INFOPLIST_FILE = KakaoSearchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yunseop.KakaoSearchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KakaoSearch;
+			};
+			name = Debug;
+		};
+		0701EED024E0EFB8008A938E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C2JG56G9EQ;
+				INFOPLIST_FILE = KakaoSearchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yunseop.KakaoSearchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KakaoSearch;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0701EE9924E0EFB7008A938E /* Build configuration list for PBXProject "KakaoSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0701EEC624E0EFB8008A938E /* Debug */,
+				0701EEC724E0EFB8008A938E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0701EEC824E0EFB8008A938E /* Build configuration list for PBXNativeTarget "KakaoSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0701EEC924E0EFB8008A938E /* Debug */,
+				0701EECA24E0EFB8008A938E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0701EECB24E0EFB8008A938E /* Build configuration list for PBXNativeTarget "KakaoSearchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0701EECC24E0EFB8008A938E /* Debug */,
+				0701EECD24E0EFB8008A938E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0701EECE24E0EFB8008A938E /* Build configuration list for PBXNativeTarget "KakaoSearchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0701EECF24E0EFB8008A938E /* Debug */,
+				0701EED024E0EFB8008A938E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0701EE9624E0EFB7008A938E /* Project object */;
+}
